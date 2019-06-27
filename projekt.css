@@ -39,7 +39,7 @@ nav
 #tlo
 {
    margin-top:30px;
-   min-height:530px;
+   min-height:521px;
 }
 
 
@@ -118,16 +118,31 @@ nav
    outline: none;
    position: sticky;
    bottom: 40px;
+   background-color: rgb(22, 19, 165) !important;
+   border: 1px solid rgb(13, 11, 100);
 }
 
 
+.guzik:hover
+{
+   float: left;
+   position: sticky;
+   bottom: 40px;
+   outline: none;
+   background-color: rgb(13, 12, 95) !important;
+   transition-duration: 2s;
+   outline: none;
+   border: 1px solid rgb(13, 11, 100);
+
+}
 .guzik:focus
 {
    float: left;
-   outline: none;
-   border: none;
    position: sticky;
    bottom: 40px;
+   background-color: rgb(13, 12, 95) !important;
+   outline: none;
+   border: 1px solid rgb(13, 11, 100);
 }
 
 .klasa
@@ -198,7 +213,6 @@ nav
 #plansza
 {
    font-size: 30px;
-   min-height:650px;
    animation-name: wynik;
    animation-duration: 8s;
    animation-iteration-count: infinite;
