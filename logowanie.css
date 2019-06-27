@@ -5,7 +5,7 @@
    margin-left: 50px;
    background: url("stars.png");
    color: white;
-   padding: 30px;
+   padding: 20px;
    padding-left:40px;
    align-items: stretch;
    border: 10px groove white;
@@ -25,3 +25,43 @@
    outline: none;
    border: 1px solid rgb(13, 11, 100);
 }
+
+form
+{
+   width: 300px;
+   margin:auto;
+
+}
+
+label
+{
+   font-size: 18px;
+
+}
+
+input
+{
+   background-color: rgb(167, 166, 166);
+   border: 3px solid rgb(68, 68, 68);
+   color: rgb(27, 27, 27) !important ;
+  
+}
+input:focus
+{
+   background-color: rgb(160, 158, 158);
+   border: 3px solid rgb(68, 68, 68);
+   outline: 3px groove rgba(0, 0, 255, 0.548);
+   color:rgb(27, 27, 27);
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+   color: rgb(27, 27, 27);
+   opacity: 1; /* Firefox */
+ }
+ 
+ :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: rgb(27, 27, 27);
+ }
+ 
+ ::-ms-input-placeholder { /* Microsoft Edge */
+   color:rgb(27, 27, 27);
+ }
