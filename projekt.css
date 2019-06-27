@@ -43,40 +43,45 @@ nav
 }
 
 
+
 .anim
 {
    width: 10px;
    left:800px;
+   top: 325px;
    height: 10px;
    border-radius:100%;
    animation-name: pocisk;
-   animation-duration: 3s;
+   animation-duration: 5s;
    -webkit-animation-name: pocisk;
-   -webkit-animation-duration: 3s;
+   -webkit-animation-duration: 5s;
+   animation-delay: 5s;
    animation-timing-function: linear;
    animation-iteration-count: infinite;
    position: relative;
-   
-}
 
+}
 
 @keyframes pocisk
 {
-   0% {background-color: rgb(252, 5, 5); top: 325px; left:800px; }
-   50% {background-color: rgb(253, 2, 2); }
-   100%{background-color: rgb(255, 0, 0); top:325px ; left: 0;}
+   0%{background-color: red; transform: translateX(0px);}
+   30% {background-color: red; transform: translateX(-800px); opacity:1;}
+   31% {opacity:0;}
+   100%{transform: translateX(-800px)}
 }
+
 
 .anim2gra
 {
    width: 10px;
    left:800px;
+   top:250px;
    height: 10px;
    border-radius:100%;
    animation-name: gra;
-   animation-duration: 3s;
+   animation-duration: 8s;
    -webkit-animation-name: gra;
-   -webkit-animation-duration: 3s;
+   -webkit-animation-duration: 8s;
    animation-timing-function: linear;
    animation-iteration-count: infinite;
    position: relative;
@@ -86,11 +91,11 @@ nav
 
 @keyframes gra
 {
-   0% {background-color: rgb(252, 5, 5); top: 250px; left:800px; }
-   50% {background-color: rgb(253, 2, 2); }
-   100%{background-color: rgb(255, 0, 0); top:325px ; left: 0;}
+   0%{background-color: red; transform: translateX(0px);}
+   30% {background-color: red; transform: translateX(-800px); opacity:1;}
+   31% {opacity:0;}
+   100%{transform: translateX(-800px)}
 }
-
 
 #dane
 {
@@ -161,15 +166,6 @@ nav
 /* GRA */
 
 
-/* #plansza
-{
-}
-
-#wynik
-{
-
-} */
-
 .ikonka
 {
    transform: rotate(180deg);
@@ -201,17 +197,14 @@ nav
 
 #plansza
 {
-   /* width: 620px; */
-   /* border: 10px groove  rgb(22, 19, 165); */
    font-size: 30px;
    min-height:650px;
    animation-name: wynik;
-   animation-duration: 10s;
+   animation-duration: 8s;
    animation-iteration-count: infinite;
-   /* animation-iteration-count: 2; */
    animation-timing-function: linear;
    -webkit-animation-name: wynik;
-   -webkit-animation-duration: 10s;
+   -webkit-animation-duration: 8s;
    position: relative;
    animation-direction: alternate;
 }
@@ -225,7 +218,6 @@ nav
    background-color: black;
    border: 1px solid rgb(66, 66, 66);
 }
-
 
 #rakieta
 {
@@ -245,22 +237,20 @@ nav
    padding: 30px;
    font-size: 30px;
    animation-name: wynik;
-   animation-duration: 10s;
+   animation-duration: 8s;
    animation-iteration-count: infinite;
-   /* animation-iteration-count: 2; */
    animation-timing-function: linear;
    -webkit-animation-name: wynik;
-   -webkit-animation-duration: 10s;
+   -webkit-animation-duration: 8s;
    position: relative;
    animation-direction: alternate;
 }
 
-
 @keyframes wynik
 {
    0% {margin-top: 0;}
-   25% {margin-top: 20px;}
-   50% {margin-top: 40px;}
-   75% {margin-top: 20px;}
+   25% {margin-top: 15px;}
+   50% {margin-top: 30px;}
+   75% {margin-top: 15px;}
    100% {margin-top: 0;}
 }
