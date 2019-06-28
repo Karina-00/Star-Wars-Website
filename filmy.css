@@ -4,6 +4,9 @@
    text-align: center;
 }
 
+* {
+	scroll-behavior: smooth;
+}
 
 .boczny
 {
@@ -19,7 +22,7 @@
       align-items: stretch;
       border: 10px groove white;
       margin: 20px;
-      text-align: center;
+      /* text-align: center; */
 }
 
 #bok
