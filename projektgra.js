@@ -54,13 +54,10 @@ function tabcreation()
                   document.getElementById(i).style.backgroundColor = "blue";
                   document.getElementById(i).innerHTML = "<i style='color:white;' class='fas fa-meteor'></i>"
                }
-
-            }
-            
+            }           
          }
       }
    }
-
 }
 
 

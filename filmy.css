@@ -3,3 +3,18 @@
    color: white;
    text-align: center;
 }
+
+.content
+{
+   color: white;
+}
+
+
+.film
+{
+   background: url("stars.png");
+   color: white;
+   margin:50px;
+   padding: 30px;
+   text-align: center;
+}
