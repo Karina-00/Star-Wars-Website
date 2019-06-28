@@ -32,17 +32,35 @@ function tabcreation()
       {
          document.getElementById(i).style.backgroundColor= "darkgray";
       }
-      if((i%25==10 || i%30==19) && document.getElementById(i).style.backgroundColor != "darkgray")
-      {
-         document.getElementById(i).style.backgroundColor = "blue";
-         document.getElementById(i).innerHTML = "<i style='color:white;' class='fas fa-meteor'></i>"
-      }
+      // if((i%25==10 || i%30==19) && document.getElementById(i).style.backgroundColor != "darkgray")
+      // {
+      //    document.getElementById(i).style.backgroundColor = "blue";
+      //    document.getElementById(i).innerHTML = "<i style='color:white;' class='fas fa-meteor'></i>"
+      // }
       if(i==(leng-szer-2))
       {
          document.getElementById(i).style.backgroundImage = "url('celg.jpg')";
          document.getElementById(i).style.backgroundColor = "pink";
       }
+      if(i>22 && i<276 && document.getElementById(i).style.backgroundColor != "darkgray")
+      {
+         losowanie()
+         function losowanie()
+         {
+            for(var j=0; j<40; j++)
+            {
+               if(i==Math.floor(Math.random()*250+22))
+               {
+                  document.getElementById(i).style.backgroundColor = "blue";
+                  document.getElementById(i).innerHTML = "<i style='color:white;' class='fas fa-meteor'></i>"
+               }
+
+            }
+            
+         }
+      }
    }
+
 }
 
 
