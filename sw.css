@@ -6,11 +6,6 @@ body
 }
 
 
-* 
-{
-	scroll-behavior: smooth;
-}
-
 .klik
 {
    background-color: rgb(252, 199, 54) !important;
@@ -32,17 +27,65 @@ body
    border: 1px solid rgb(212, 128, 2) !important;
 }
 
-#star
+#s1
 {
-   opacity: 0;
-
+   top: 150px;
+   left: 100px;
+   animation-duration: 9s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+   -webkit-animation-duration: 9s;
+   position: relative;
 }
+
+#s2
+{
+   top: 250px;
+   left: 1000px;
+   animation-duration: 11s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+   -webkit-animation-duration: 11s;
+   position: relative;
+}
+
+#s3
+{
+   top: 360px;
+   left: 300px;
+   animation-duration: 7s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+   -webkit-animation-duration: 7s;
+   position: relative;
+}
+
+.star
+{
+   width: 30px;
+   height: 30px;
+   font-weight: bold;
+   font-size: 30px;
+   color: white;
+   border-radius: 100%;
+   -webkit-box-shadow: 10px -9px 26px 1px rgba(255,255,255,1);
+   -moz-box-shadow: 10px -9px 26px 1px rgba(255,255,255,1);
+   box-shadow: 10px -9px 26px 1px rgba(255,255,255,1);
+   animation-name: wynik;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+   -webkit-animation-name: wynik;
+   -webkit-animation-duration: 10s;
+   position: relative;
+}
+
+
 
 @keyframes wynik
 {
-   0% {margin-top: 0;}
-   25% {margin-top: 15px;}
-   50% {margin-top: 30px;}
-   75% {margin-top: 15px;}
-   100% {margin-top: 0;}
+   0% {opacity: 1;}
+   1% {opacity: 0;}
+   20% {opacity: 0;}
+   100% {opacity: 0;}
 }

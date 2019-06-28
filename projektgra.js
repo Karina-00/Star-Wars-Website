@@ -47,7 +47,7 @@ function tabcreation()
          losowanie()
          function losowanie()
          {
-            for(var j=0; j<40; j++)
+            for(var j=0; j<60; j++)
             {
                if(i==Math.floor(Math.random()*250+22))
                {
