@@ -2,7 +2,10 @@ var tytul;
 var odc;
 var data;
 var i = 1;
-
+// function gen()
+// {
+   
+// }
 
 fetch('https://swapi.co/api/films/?page='+i)
 .then(function(response){
@@ -15,15 +18,21 @@ clearInterval(time);
 console.log(item);
 document.getElementById("ladowanie").innerHTML = "";
 test(item.title, item.episode_id, item.release_date);
+   // item.sort(function(a, b) {
+   //    return parseFloat(a.episode_id) - parseFloat(b.episode_id);
+   // });
+
+
 });
 });
 
 function test(tytul, odc, data)
 {
    var a = document.createElement('div');
-   a.setAttribute("class", "klasa col-lg-10 col-md-10 col-sm-10");
+   a.setAttribute("class", "glowna col-lg-10 col-md-10 col-sm-10");
    a.innerHTML = "<h1><i class='fas fa-film'></i> "+tytul+"</h1><br>"+"Episode: "+odc+"<br><i class='far fa-calendar-alt'></i> "+data;
    document.getElementById("lista").appendChild(a);
+
 
    // document.getElementsByTagName("sidebar").innerHTML = tytul;
    var b = document.createElement('div');

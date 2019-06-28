@@ -9,3 +9,15 @@
 {
    margin: 0 !important;
 }
+
+.glowna
+{
+      background: url("stars.png");
+      color: white;
+      padding: 20px;
+      padding-left:40px;
+      align-items: stretch;
+      border: 10px groove white;
+      margin: 20px;
+      text-align: center;
+}

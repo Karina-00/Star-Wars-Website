@@ -4,3 +4,30 @@ body
    background: url("bg.jpg");
    background-attachment: scroll;
 }
+
+
+* 
+{
+	scroll-behavior: smooth;
+}
+
+.klik
+{
+   background-color: rgb(218, 218, 0) !important;
+   border: 1px solid rgb(255, 208, 0) !important;
+}
+
+
+.klik:hover
+{
+
+   background-color: rgb(255, 153, 0) !important;
+   transition-duration: 2s;
+   border: 1px solid rgb(212, 128, 2) !important;
+}
+.klik:focus
+{
+   background-color: rgb(255, 153, 0) !important;
+   transition-duration: 2s;
+   border: 1px solid rgb(212, 128, 2) !important;
+}
