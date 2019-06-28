@@ -4,17 +4,8 @@
    text-align: center;
 }
 
-.content
-{
-   color: white;
-}
 
-
-.film
+.boczny
 {
-   background: url("stars.png");
-   color: white;
-   margin:50px;
-   padding: 30px;
-   text-align: center;
+   margin: 0 !important;
 }

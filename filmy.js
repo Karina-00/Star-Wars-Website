@@ -21,10 +21,15 @@ test(item.title, item.episode_id, item.release_date);
 function test(tytul, odc, data)
 {
    var a = document.createElement('div');
-   a.setAttribute("class", "film col-lg-12 col-md-12 col-sm-12");
+   a.setAttribute("class", "klasa col-lg-10 col-md-10 col-sm-10");
    a.innerHTML = "<h1><i class='fas fa-film'></i> "+tytul+"</h1><br>"+"Episode: "+odc+"<br><i class='far fa-calendar-alt'></i> "+data;
    document.getElementById("lista").appendChild(a);
+
    // document.getElementsByTagName("sidebar").innerHTML = tytul;
+   var b = document.createElement('div');
+   b.setAttribute("class", " klasa boczny col-lg-12 col-md-12 col-sm-12");
+   b.innerHTML = "<h1><i class='fas fa-film'></i> "+tytul;
+   document.getElementById("bok").appendChild(b);
 }
 
 
