@@ -2,10 +2,6 @@ var tytul;
 var odc;
 var data;
 var i = 1;
-// function gen()
-// {
-   
-// }
 
 fetch('https://swapi.co/api/films/?page='+i)
 .then(function(response){
@@ -18,11 +14,6 @@ clearInterval(time);
 console.log(item);
 document.getElementById("ladowanie").innerHTML = "";
 test(item.title, item.episode_id, item.release_date);
-   // item.sort(function(a, b) {
-   //    return parseFloat(a.episode_id) - parseFloat(b.episode_id);
-   // });
-
-
 });
 sortowanie();
 });
@@ -34,37 +25,16 @@ var z=1;
 
 function test(tytul, odc, data)
 {
-   // var a = document.createElement('div');
-   // a.setAttribute("class", "glowna col-lg-10 col-md-10 col-sm-10");
-   // a.setAttribute("id",  odc);
-   // a.innerHTML = "<h1><i class='fas fa-film'></i> "+tytul+"</h1><br>"+"Episode: "+odc+"<br><i class='far fa-calendar-alt'></i> "+data;
-   // document.getElementById("lista").appendChild(a);
-
-
-   // var b = document.createElement('div');
-   // b.setAttribute("class", " klasa boczny col-lg-12 col-md-12 col-sm-12");
-   // b.setAttribute("id",  odc);
-   // b.innerHTML = "<h1><i class='fas fa-film'></i> "+tytul;
-   // document.getElementById("bok").appendChild(b);
    z=odc;
-epiz[z]=odc;
-title[z]=tytul;
-how[z]=data;
-
-
-   // document.getElementById("lista").innerHTML += "<div id='"+odc+"'><h1><i class='fas fa-film'></i> "+tytul+"</h1><br>"+"Episode: "+odc+"<br><i class='far fa-calendar-alt'></i> "+data+"</div>";
-   // document.getElementById("bok").innerHTML += "<div id='"+odc+"'><h1><i class='fas fa-film'></i> "+tytul+"</h1><br>"+"Episode: "+odc+"<br><i class='far fa-calendar-alt'></i> "+data+"</div>";
-
+   epiz[z]=odc;
+   title[z]=tytul;
+   how[z]=data;
 }
 
 function sortowanie()
 {
    for(var i=1;i<8;i++)
    {
-      // for(var j=1;j<8;j++)
-      // {
-      //    if(epiz[j]==i)
-      //    {
             document.getElementById("lista").innerHTML += "<div id='"+i+"' class='glowna col-lg-10 col-md-10 col-sm-10'><h1><i class='fas fa-film'></i> "+title[i]+"</h1><br>"+"Episode: "+epiz[i]+"<br><i class='far fa-calendar-alt'></i> "+how[i]+"</div>";
             document.getElementById("bok").innerHTML += "<a href='#"+i+"'><div class='klasa boczny col-lg-12 col-md-12 col-sm-12'><h1><i class='fas fa-film'></i> "+title[i]+"</h1><br>"+"Episode: "+epiz[i]+"<br><i class='far fa-calendar-alt'></i> "+how[i]+"</div></a>";
             if(i==1)
@@ -95,9 +65,6 @@ function sortowanie()
             {
                document.getElementById(i).innerHTML += "<br><p>Gwiezdne wojny: Przebudzenie mocy to siódma część słynnej sagi. Film otrzymał wiele nagród, wyróżniony także został pięcioma nominacjami do Oscara (m.in. za muzykę Johna Williamsa, montaż oraz efekty specjalne). Reżyserem i współautorem scenariusza tej produkcji został J.J. Abrams (Zagubieni, Star Trek). Akcja filmu Gwiezdne wojny: Przebudzenie mocy rozgrywa się trzydzieści lat od pokonania Imperium Zła. Niestety, Galaktyce znów zagraża niebezpieczeństwo. Władzę nad nią chce przejąć Najwyższy Porządek. Aby mu w tym przeszkodzić, powstał Ruch Oporu, któremu przewodzi generał Leia Organa (Carrie Fisher). </p><p>Tymczasem brat Lei, Luke Skywalker (Mark Hamill), zaginął. Gdy dociera do niej informacja, że przebywa on na pustynnej planecie Jakku, wysyła tam swojego najlepszego pilota, Poego Damerona (Oscar Isaac). Niestety, wpada on w ręce złowrogiego Kylo Rena (Adam Driver). Wkrótce w filmie 'Gwiezdne wojny: Przebudzenie mocy' pojawiają się także zbuntowany szturmowiec Finn (John Boyega) oraz Rey (Daisy Ridley) - młoda dziewczyna obdarzona niezwykłymi umiejętnościami. Oni także zostają wmieszani w rozgrywkę pomiędzy Ruchem Oporu a Najwyższym Porządkiem.</p><br<br> Zobacz zwiastun:<br><iframe class='col-lg-12 col-md-12 col-sm-12 col-xs-12' width='560' height='315' src='https://www.youtube.com/embed/P8248pLA9d8' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
             }
-
-      //    }
-      // }
    }
 }
 

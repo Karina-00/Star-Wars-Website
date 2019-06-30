@@ -5,9 +5,6 @@ for(var i=0; i<300; i++)
    tab[i]=0;
 }
 
-
-
-
 var szer = 20;
 tab[1+szer] = 1;
 var leng = tab.length;
@@ -32,11 +29,6 @@ function tabcreation()
       {
          document.getElementById(i).style.backgroundColor= "darkgray";
       }
-      // if((i%25==10 || i%30==19) && document.getElementById(i).style.backgroundColor != "darkgray")
-      // {
-      //    document.getElementById(i).style.backgroundColor = "blue";
-      //    document.getElementById(i).innerHTML = "<i style='color:white;' class='fas fa-meteor'></i>"
-      // }
       if(i==(leng-szer-2))
       {
          document.getElementById(i).style.backgroundImage = "url('celg.jpg')";
@@ -81,7 +73,6 @@ function key(e)
                {
                   
                   document.getElementById("wynik").innerHTML = "<div class='polewynik'>Utknąłeś, uderzyłeś w kometę i nie udało Ci się dotrzeć do celu :c Uważaj następnym razem!<br><br><br><label>Zagraj ponownie: <a href='projektgra.html'><button class='btn btn-danger'>Play</button></a></label></div>";
-                  // koniec();             
                   document.getElementById(i+1).style.backgroundColor = "darkgray";                  
                   document.getElementById(i-1).style.backgroundColor = "darkgray";
                   document.getElementById(i+szer).style.backgroundColor = "darkgray";
@@ -90,7 +81,6 @@ function key(e)
                else if(document.getElementById(i-1).style.backgroundColor == "pink")
                {
                   document.getElementById("wynik").innerHTML = "<div class='polewynik'>Sukces! Udało Ci się wlecieć do czarnej dziury, gratulacje!<br><br><br><label>Zagraj ponownie: <a href='projektgra.html'><button class='btn btn-danger'>Play</button></a></label></div>";
-                  // koniec();
                   document.getElementById(i+1).style.backgroundColor = "darkgray";
                   document.getElementById(i-1).style.backgroundColor = "darkgray";
                   document.getElementById(i+szer).style.backgroundColor = "darkgray";
@@ -121,7 +111,6 @@ function key(e)
                else if(document.getElementById(i-szer).style.backgroundColor == "blue")
                {
                   document.getElementById("wynik").innerHTML = "<div class='polewynik'>Utknąłeś, uderzyłeś w kometę i nie udało Ci się dotrzeć do celu :c Uważaj następnym razem!<br><br><br><label>Zagraj ponownie: <a href='projektgra.html'><button class='btn btn-danger'>Play</button></a></label></div>";
-                  // koniec();
                   document.getElementById(i+1).style.backgroundColor = "darkgray";
                   document.getElementById(i-1).style.backgroundColor = "darkgray";
                   document.getElementById(i+szer).style.backgroundColor = "darkgray";
@@ -130,7 +119,6 @@ function key(e)
                else if(document.getElementById(i-szer).style.backgroundColor == "pink")
                {
                   document.getElementById("wynik").innerHTML = "<div class='polewynik'>Sukces! Udało Ci się wlecieć do czarnej dziury, gratulacje!<br><br><br><label>Zagraj ponownie: <a href='projektgra.html'><button class='btn btn-danger'>Play</button></a></label></div>";
-                  // koniec();
                   document.getElementById(i+1).style.backgroundColor = "darkgray";
                   document.getElementById(i-1).style.backgroundColor = "darkgray";
                   document.getElementById(i+szer).style.backgroundColor = "darkgray";
@@ -142,8 +130,6 @@ function key(e)
                   tab[i]=0;
                   document.getElementById(i-szer).style.backgroundImage = "url('rocketup.png')";
                   document.getElementById(i).style.backgroundImage = "";
-                  // document.getElementById(i-szer).innerHTML = "";
-                  // document.getElementById(i).innerHTML = "<div class='kratki' id='"+i+"'></div>";
                }
             }
          }
@@ -163,7 +149,6 @@ function key(e)
                else if(document.getElementById(i+szer).style.backgroundColor == "blue")
                {
                   document.getElementById("wynik").innerHTML = "<div class='polewynik'>Utknąłeś, uderzyłeś w kometę i nie udało Ci się dotrzeć do celu :c Uważaj następnym razem!<br><br><br><label>Zagraj ponownie: <a href='projektgra.html'><button class='btn btn-danger'>Play</button></a></label></div>";
-                  // koniec();
                   document.getElementById(i+1).style.backgroundColor = "darkgray";
                   document.getElementById(i-1).style.backgroundColor = "darkgray";
                   document.getElementById(i+szer).style.backgroundColor = "darkgray";
@@ -172,7 +157,6 @@ function key(e)
                else if(document.getElementById(i+szer).style.backgroundColor == "pink")
                {
                   document.getElementById("wynik").innerHTML = "<div class='polewynik'>Sukces! Udało Ci się wlecieć do czarnej dziury, gratulacje!<br><br><br><label>Zagraj ponownie: <a href='projektgra.html'><button class='btn btn-danger'>Play</button></a></label></div>";
-               //   koniec();
                document.getElementById(i+1).style.backgroundColor = "darkgray";
                   document.getElementById(i-1).style.backgroundColor = "darkgray";
                   document.getElementById(i+szer).style.backgroundColor = "darkgray";
@@ -184,8 +168,6 @@ function key(e)
                   tab[i+szer]=1;
                   document.getElementById(i+szer).style.backgroundImage = "url('rocketdown.png')";
                   document.getElementById(i).style.backgroundImage = "";
-                  // document.getElementById(i+szer).innerHTML = "";
-                  // document.getElementById(i).innerHTML = "<div class='kratki' id='"+i+"'></div>"; 
                }
                break;
             }
@@ -222,7 +204,6 @@ function key(e)
                   document.getElementById(i-1).style.backgroundColor = "darkgray";
                   document.getElementById(i+szer).style.backgroundColor = "darkgray";
                   document.getElementById(i-szer).style.backgroundColor = "darkgray";
-                  // koniec();
                }
                else
                {
@@ -237,16 +218,3 @@ function key(e)
          break;
    } 
 }
-
-
-
-// function koniec()
-// {
-
-   
-//    document.getElementById(i+1).style.backgroundColor = "darkgray";
-//    document.getElementById(i-1).style.backgroundColor = "darkgray";
-//    document.getElementById(i+szer).style.backgroundColor = "darkgray";
-//    document.getElementById(i-szer).style.backgroundColor = "darkgray";
-
-// }

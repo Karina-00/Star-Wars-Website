@@ -27,13 +27,11 @@ form
 {
    width: 300px;
    margin:auto;
-
 }
 
 label
 {
    font-size: 18px;
-
 }
 
 input
@@ -41,7 +39,6 @@ input
    background-color: rgb(167, 166, 166);
    border: 3px solid rgb(68, 68, 68);
    color: rgb(27, 27, 27) !important ;
-  
 }
 input:focus
 {
@@ -61,15 +58,4 @@ input:focus
  
  ::-ms-input-placeholder { /* Microsoft Edge */
    color:rgb(27, 27, 27);
- }
-
-
- .zle
- {
-    color: red;
- }
-
- .dobre
- {
-    color: green;
  }

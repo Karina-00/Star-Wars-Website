@@ -112,8 +112,6 @@ function grastart()
    location.href= "projektgra.html";
 }
 
-
-
 var time = setInterval(function()
 {
    console.log("loading...");
